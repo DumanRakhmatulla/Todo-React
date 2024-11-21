@@ -11,7 +11,6 @@ body {
 .App {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
   margin: 40px 200px 60px 200px;
   height: calc(100vh - 50px);
 }
@@ -19,7 +18,7 @@ body {
 .Header {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .Header div {
@@ -33,4 +32,25 @@ body {
 .Header img {
   height: 50px;
   width: 50px;
+}
+
+@media (max-width: 1040px) {
+  .App {
+    margin: 40px 100px 10px 100px;
+  }
+}
+
+@media (max-width: 840px) {
+  .App {
+    margin: 40px 80px;
+  }
+}
+
+@media (max-width: 790px) {
+  .App {
+    margin: 40px 60px;
+  }
+  .Header input[type="input"] {
+    width: 350px;
+  }
 }

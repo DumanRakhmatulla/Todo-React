@@ -33,7 +33,7 @@ function Main() {
       <div className="input-container">
         <li>
           <input
-            type="text"
+            type="input"
             placeholder="Add your new task..."
             value={newTask}
             onChange={(e) => setNewTask(e.target.value)}
