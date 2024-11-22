@@ -7,14 +7,12 @@ function Main() {
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState("");
 
-  // Function to add a new task
   const addTask = () => {
-    if (newTask.trim() === "") return; // Prevent empty tasks
+    if (newTask.trim() === "") return;
     setTasks([...tasks, { id: Date.now(), text: newTask, completed: false }]);
     setNewTask("");
   };
 
-  // Function to toggle task completion
   const toggleCompletion = (id) => {
     setTasks(
       tasks.map((task) =>
@@ -23,7 +21,6 @@ function Main() {
     );
   };
 
-  // Function to delete a task
   const deleteTask = (id) => {
     setTasks(tasks.filter((task) => task.id !== id));
   };
